@@ -1,0 +1,31 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
+"Language: cs_CZ\n"
+
+msgid "Google Rating"
+msgstr "Google hodnocení"
+
+msgid "See All Reviews"
+msgstr "Zobrazit všechny recenze"
+
+msgid "Google User"
+msgstr "Google uživatel"
+
+msgid "read more"
+msgstr "celá recenze"
+
+msgid "Next Reviews"
+msgstr "Další recenze"
+
+msgid "Write a review"
+msgstr "Napsat recenzi"

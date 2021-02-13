@@ -1,0 +1,74 @@
+.pms-credit-card-information {
+    display: none;
+}
+
+.pms-billing-details {
+    display: none;
+}
+
+#pms_billing_country {
+    width: 100%;
+}
+
+.StripeElement {
+    box-sizing: border-box;
+
+    height: 40px;
+
+    padding: 10px 12px;
+
+    border: 1px solid #cfd7df;
+    border-radius: 4px;
+    background-color: white;
+
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+    box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+    border-color: #fb1427;
+}
+
+.StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+}
+
+.pms-loader {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #00a0d2;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
+
+.pms-auth-form__loader-msg {
+    margin-top: 6px;
+    text-align: center;
+}
+
+.pms-stripe-error-message {
+    font-size: 16px;
+    color: #fb1427;
+    margin-top: 8px;
+}
+
+.wppb-user-forms .pms-credit-card-information {
+    margin-bottom: 24px;
+}

@@ -1,0 +1,6 @@
+/**
+ * Hide Billing Details by default, will display them from JS if selected plan is not free
+ */
+.pms-billing-details{
+    display:none;
+}
