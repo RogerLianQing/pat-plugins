@@ -42,7 +42,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
         echo '</li>';
 
         // Get the contents and clean
-        
         $subscription_plans_field = ob_get_contents();
         ob_end_clean();
 
@@ -78,7 +77,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
         <?php $field_errors = pms_errors()->get_error_messages('first_name'); ?>
         <li class="pms-field pms-first-name-field <?php echo ( !empty( $field_errors ) ? 'pms-field-error' : '' ); ?>">
-            <label for="pms_first_name"><?php echo apply_filters( 'pms_register_form_label_first_name', __( 'First Name *', 'paid-member-subscriptions' ) ); ?></label>
+            <label for="pms_first_name"><?php echo apply_filters( 'pms_register_form_label_first_name', __( 'First Name', 'paid-member-subscriptions' ) ); ?></label>
             <input id="pms_first_name" name="first_name" type="text" value="<?php echo ( isset( $_POST['first_name'] ) ? esc_attr( $_POST['first_name'] ) : '' ); ?>" />
 
             <?php pms_display_field_errors( $field_errors ); ?>
@@ -86,7 +85,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
         <?php $field_errors = pms_errors()->get_error_messages('last_name'); ?>
         <li class="pms-field pms-last-name-field <?php echo ( !empty( $field_errors ) ? 'pms-field-error' : '' ); ?>">
-            <label for="pms_last_name"><?php echo apply_filters( 'pms_register_form_label_last_name', __( 'Last Name *', 'paid-member-subscriptions' ) ); ?></label>
+            <label for="pms_last_name"><?php echo apply_filters( 'pms_register_form_label_last_name', __( 'Last Name', 'paid-member-subscriptions' ) ); ?></label>
             <input id="pms_last_name" name="last_name" type="text" value="<?php echo ( isset( $_POST['last_name'] ) ? esc_attr( $_POST['last_name'] ) : '' ); ?>" />
 
             <?php pms_display_field_errors( $field_errors ); ?>
