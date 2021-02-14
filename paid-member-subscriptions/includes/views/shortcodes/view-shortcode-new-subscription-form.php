@@ -34,6 +34,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
             $field_errors = pms_errors()->get_error_messages( 'subscription_plans' );
             echo '<li class="pms-field pms-field-subscriptions ' . ( !empty( $field_errors ) ? 'pms-field-error' : '' ) . '">';
                 echo $plans;
+                echo pms_output_subscription_plans( $atts['subscription_plans'], $atts['exclude'], false, (isset($atts['selected']) ? trim($atts['selected']) : '' ), 'new_subscription' );
             echo '</li>';
 
         ?>
