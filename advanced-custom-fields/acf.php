@@ -3,12 +3,11 @@
 Plugin Name: Advanced Custom Fields
 Plugin URI: https://www.advancedcustomfields.com
 Description: Customize WordPress with powerful, professional and intuitive fields.
-Version: 5.9.4
+Version: 5.9.5
 Author: Elliot Condon
 Author URI: https://www.advancedcustomfields.com
 Text Domain: acf
 Domain Path: /lang
-this is A test
 */
 
 if( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -18,7 +17,7 @@ if( ! class_exists('ACF') ) :
 class ACF {
 	
 	/** @var string The plugin version number. */
-	var $version = '5.9.4';
+	var $version = '5.9.5';
 	
 	/** @var array The plugin settings array. */
 	var $settings = array();
