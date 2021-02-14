@@ -296,25 +296,25 @@ msgid_plural "%s years"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../pms-add-on-discount-codes/index.php:333, includes/functions-subscription-plan.php:486
+#: ../pms-add-on-discount-codes/index.php:333, includes/functions-subscription-plan.php:491
 msgid "day"
 msgid_plural "%s days"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../pms-add-on-discount-codes/index.php:336, includes/functions-subscription-plan.php:489
+#: ../pms-add-on-discount-codes/index.php:336, includes/functions-subscription-plan.php:494
 msgid "week"
 msgid_plural "%s weeks"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../pms-add-on-discount-codes/index.php:339, includes/functions-subscription-plan.php:492
+#: ../pms-add-on-discount-codes/index.php:339, includes/functions-subscription-plan.php:497
 msgid "month"
 msgid_plural "%s months"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../pms-add-on-discount-codes/index.php:342, includes/functions-subscription-plan.php:495
+#: ../pms-add-on-discount-codes/index.php:342, includes/functions-subscription-plan.php:500
 msgid "year"
 msgid_plural "%s years"
 msgstr[0] ""
@@ -384,7 +384,7 @@ msgstr ""
 msgid "Post Type"
 msgstr ""
 
-#: ../pms-add-on-global-content-restriction/class-meta-box-subscription-plan-content-restriction.php:167, ../pms-add-on-global-content-restriction/class-meta-box-subscription-plan-content-restriction.php:215, ../pms-add-on-navigation-menu-filtering/class-nav-menu-filtering.php:90, ../pms-add-on-content-dripping/includes/class-meta-box-content-dripping-rules.php:100, ../pms-add-on-content-dripping/includes/class-meta-box-content-dripping-rules.php:113, ../pms-add-on-multiple-subscriptions-per-user/includes/functions.php:118, extend/woocommerce/woocommerce-integration.php:138, ../pms-add-on-content-dripping/includes/views/view-meta-box-content-dripping-details.php:12, extend/profile-builder/admin/manage-fields.php:23, includes/admin/views/view-page-members-add-new-edit-subscription.php:193, includes/admin/views/view-page-members-add-new-edit-subscription.php:352, includes/admin/views/view-page-payments-add-new-edit.php:102, includes/admin/views/view-page-settings-general.php:55, includes/admin/views/view-page-settings-general.php:76, includes/admin/views/view-page-settings-general.php:97, includes/admin/views/view-page-settings-general.php:118, includes/admin/views/view-page-settings-general.php:139, extend/woocommerce/includes/admin/meta-boxes/class-meta-box-product-membership-discounts.php:102
+#: ../pms-add-on-global-content-restriction/class-meta-box-subscription-plan-content-restriction.php:167, ../pms-add-on-global-content-restriction/class-meta-box-subscription-plan-content-restriction.php:215, ../pms-add-on-navigation-menu-filtering/class-nav-menu-filtering.php:90, ../pms-add-on-content-dripping/includes/class-meta-box-content-dripping-rules.php:100, ../pms-add-on-content-dripping/includes/class-meta-box-content-dripping-rules.php:113, ../pms-add-on-multiple-subscriptions-per-user/includes/functions.php:134, extend/woocommerce/woocommerce-integration.php:138, ../pms-add-on-content-dripping/includes/views/view-meta-box-content-dripping-details.php:12, extend/profile-builder/admin/manage-fields.php:23, includes/admin/views/view-page-members-add-new-edit-subscription.php:193, includes/admin/views/view-page-members-add-new-edit-subscription.php:352, includes/admin/views/view-page-payments-add-new-edit.php:102, includes/admin/views/view-page-settings-general.php:55, includes/admin/views/view-page-settings-general.php:76, includes/admin/views/view-page-settings-general.php:97, includes/admin/views/view-page-settings-general.php:118, includes/admin/views/view-page-settings-general.php:139, extend/woocommerce/includes/admin/meta-boxes/class-meta-box-product-membership-discounts.php:102
 msgid "Choose..."
 msgstr ""
 
@@ -777,7 +777,7 @@ msgstr ""
 msgid "Please select a subscription plan."
 msgstr ""
 
-#: includes/class-form-handler.php:296, ../pms-add-on-stripe/includes/functions-filters.php:102, includes/admin/class-admin-members.php:749, includes/admin/class-admin-payments-log-list-table.php:238, ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:294
+#: includes/class-form-handler.php:296, ../pms-add-on-stripe/includes/functions-filters.php:102, includes/admin/class-admin-members.php:749, includes/admin/class-admin-payments-log-list-table.php:238, ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:296
 msgid "Something went wrong."
 msgstr ""
 
@@ -893,7 +893,7 @@ msgstr ""
 msgid "abandoned"
 msgstr ""
 
-#: includes/class-merge-tags-old.php:193, includes/class-merge-tags.php:202, includes/functions-subscription-plan.php:407, ../pms-add-on-group-memberships/includes/class-group-memberships.php:537, includes/admin/class-admin-subscription-plans.php:406, includes/admin/views/view-page-addons.php:77, includes/admin/views/view-page-addons.php:150
+#: includes/class-merge-tags-old.php:193, includes/class-merge-tags.php:202, includes/functions-subscription-plan.php:412, ../pms-add-on-group-memberships/includes/class-group-memberships.php:537, includes/admin/class-admin-subscription-plans.php:406, includes/admin/views/view-page-addons.php:77, includes/admin/views/view-page-addons.php:150
 msgid "Free"
 msgstr ""
 
@@ -925,7 +925,7 @@ msgstr ""
 msgid "Only an administrator can add new users."
 msgstr ""
 
-#: includes/class-shortcodes.php:194, ../pms-add-on-multiple-subscriptions-per-user/includes/class-shortcodes.php:84
+#: includes/class-shortcodes.php:194, ../pms-add-on-multiple-subscriptions-per-user/includes/class-shortcodes.php:85
 msgid "Only registered users can see this information."
 msgstr ""
 
@@ -2937,47 +2937,47 @@ msgstr ""
 msgid "Dismiss this notice."
 msgstr ""
 
-#: includes/functions-subscription-plan.php:421, includes/admin/class-admin-subscription-plans.php:390, includes/admin/class-admin-subscription-plans.php:435
+#: includes/functions-subscription-plan.php:426, includes/admin/class-admin-subscription-plans.php:390, includes/admin/class-admin-subscription-plans.php:435
 msgid "%s Day"
 msgid_plural "%s Days"
 msgstr[0] ""
 msgstr[1] ""
 
-#: includes/functions-subscription-plan.php:424, includes/admin/class-admin-subscription-plans.php:393, includes/admin/class-admin-subscription-plans.php:438
+#: includes/functions-subscription-plan.php:429, includes/admin/class-admin-subscription-plans.php:393, includes/admin/class-admin-subscription-plans.php:438
 msgid "%s Week"
 msgid_plural "%s Weeks"
 msgstr[0] ""
 msgstr[1] ""
 
-#: includes/functions-subscription-plan.php:427, includes/admin/class-admin-subscription-plans.php:396, includes/admin/class-admin-subscription-plans.php:441
+#: includes/functions-subscription-plan.php:432, includes/admin/class-admin-subscription-plans.php:396, includes/admin/class-admin-subscription-plans.php:441
 msgid "%s Month"
 msgid_plural "%s Months"
 msgstr[0] ""
 msgstr[1] ""
 
-#: includes/functions-subscription-plan.php:430, includes/admin/class-admin-subscription-plans.php:399, includes/admin/class-admin-subscription-plans.php:444
+#: includes/functions-subscription-plan.php:435, includes/admin/class-admin-subscription-plans.php:399, includes/admin/class-admin-subscription-plans.php:444
 msgid "%s Year"
 msgid_plural "%s Years"
 msgstr[0] ""
 msgstr[1] ""
 
-#: includes/functions-subscription-plan.php:503
+#: includes/functions-subscription-plan.php:508
 msgid " with a %1$s %2$s free trial"
 msgstr ""
 
-#: includes/functions-subscription-plan.php:542
+#: includes/functions-subscription-plan.php:547
 msgid " and a %1$s sign-up fee"
 msgstr ""
 
-#: includes/functions-subscription-plan.php:615, ../pms-add-on-paypal-express-pro/includes/functions.php:418, ../pms-add-on-paypal-standard-recurring-payments/includes/functions-front-end.php:40
+#: includes/functions-subscription-plan.php:620, ../pms-add-on-paypal-express-pro/includes/functions.php:418, ../pms-add-on-paypal-standard-recurring-payments/includes/functions-front-end.php:40
 msgid "Automatically renew subscription"
 msgstr ""
 
-#: includes/functions-subscription-plan.php:727
+#: includes/functions-subscription-plan.php:732
 msgid "You need to create Subscription Plans before you can use this form. Go to your <strong>Dashboard -> Paid Member Subscriptions -> Subscriptions Plans</strong> to do this."
 msgstr ""
 
-#: includes/functions-subscription-plan.php:728, ../pms-add-on-paypal-express-pro/includes/functions.php:237, ../pms-add-on-paypal-express-pro/includes/functions.php:269, ../pms-add-on-paypal-standard-recurring-payments/includes/functions-paypal.php:849, ../pms-add-on-paypal-standard-recurring-payments/includes/functions-paypal.php:881, ../pms-add-on-stripe/includes/functions-actions.php:25, includes/gateways/paypal_standard/functions-paypal-standard.php:62, includes/gateways/paypal_standard/functions-paypal-standard.php:90
+#: includes/functions-subscription-plan.php:733, ../pms-add-on-paypal-express-pro/includes/functions.php:237, ../pms-add-on-paypal-express-pro/includes/functions.php:269, ../pms-add-on-paypal-standard-recurring-payments/includes/functions-paypal.php:849, ../pms-add-on-paypal-standard-recurring-payments/includes/functions-paypal.php:881, ../pms-add-on-stripe/includes/functions-actions.php:25, includes/gateways/paypal_standard/functions-paypal-standard.php:62, includes/gateways/paypal_standard/functions-paypal-standard.php:90
 msgid "This message is visible only by Administrators."
 msgstr ""
 
@@ -3341,7 +3341,7 @@ msgid_plural "%d members invited successfully !"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../pms-add-on-group-memberships/includes/class-group-memberships.php:359, ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:307
+#: ../pms-add-on-group-memberships/includes/class-group-memberships.php:359, ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:309
 msgid "Group name cannot be empty."
 msgstr ""
 
@@ -3381,7 +3381,7 @@ msgstr ""
 msgid "Member invitation removed succesfully !"
 msgstr ""
 
-#: ../pms-add-on-group-memberships/includes/class-group-memberships.php:765, ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:368, ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:360
+#: ../pms-add-on-group-memberships/includes/class-group-memberships.php:765, ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:370, ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:362
 msgid "Member removed successfully !"
 msgstr ""
 
@@ -3449,15 +3449,15 @@ msgstr ""
 msgid " until %s"
 msgstr ""
 
-#: ../pms-add-on-multiple-subscriptions-per-user/includes/class-shortcodes.php:70
+#: ../pms-add-on-multiple-subscriptions-per-user/includes/class-shortcodes.php:71
 msgid "Select subscription plan"
 msgstr ""
 
-#: ../pms-add-on-multiple-subscriptions-per-user/includes/functions.php:89
+#: ../pms-add-on-multiple-subscriptions-per-user/includes/functions.php:105
 msgid "Add New Subscription"
 msgstr ""
 
-#: ../pms-add-on-multiple-subscriptions-per-user/includes/functions.php:113, extend/woocommerce/includes/admin/meta-boxes/class-meta-box-product-membership-discounts.php:79
+#: ../pms-add-on-multiple-subscriptions-per-user/includes/functions.php:129, extend/woocommerce/includes/admin/meta-boxes/class-meta-box-product-membership-discounts.php:79
 msgid "Subscription plan"
 msgstr ""
 
@@ -4991,47 +4991,47 @@ msgstr ""
 msgid "The number of additional members, including the owner, that can be added to the subscription."
 msgstr ""
 
-#: ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:231
-msgid "Filter by Group..."
+#: ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:232
+msgid "Group..."
 msgstr ""
 
-#: ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:276
+#: ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:278
 msgid "Edit Owner"
 msgstr ""
 
-#: ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:304
+#: ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:306
 msgid "Invalid subscriptions."
 msgstr ""
 
-#: ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:310
+#: ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:312
 msgid "Group seats cannot be empty."
 msgstr ""
 
-#: ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:313
+#: ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:315
 msgid "Group seats needs to be a number"
 msgstr ""
 
-#: ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:316
+#: ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:318
 msgid "Available seats needs to be equal or bigger than used seats."
 msgstr ""
 
-#: ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:330
+#: ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:332
 msgid "Group subscription details edited successfully !"
 msgstr ""
 
-#: ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:396
+#: ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:398
 msgid "Group subscriptions can only be added as upgrades to regular plans."
 msgstr ""
 
-#: ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:397
+#: ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:399
 msgid "Regular plans cannot be added as upgrades to Group subscription plans."
 msgstr ""
 
-#: ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:398
+#: ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:400
 msgid "You need to define the number of seats for this Group Subscription."
 msgstr ""
 
-#: ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:399
+#: ../pms-add-on-group-memberships/includes/admin/class-admin-group-memberships.php:401
 msgid "Group subscriptions cannot be downgrades to regular plans."
 msgstr ""
 

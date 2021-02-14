@@ -4,7 +4,7 @@ Donate link: https://www.cozmoslabs.com/wordpress-paid-member-subscriptions/
 Tags: membership, paid membership, membership plan, membership level, member, members, subscription plans, user payments, paying users, paid users, restrict content, restrict access, content protection, content restriction, recurring payments, woocommerce
 Requires at least: 3.1
 Tested up to: 5.6
-Stable tag: 2.2.9
+Stable tag: 2.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -193,6 +193,12 @@ For more information please check out [Paid Member Subscriptions documentation](
 
 
 == Changelog ==
+= 2.3.0 =
+* Fix: recurring subscriptions not being cancelled when the user was deleting his own account through the GDPR functionality
+* Fix: sign-up fees should not be shown during a subscription upgrade as they are not applied
+* Fix: small incompatibility when Profile Builder was being used alongside WooCommerce
+* Misc: improved reliability of the duplicate website cron check
+
 = 2.2.9 =
 * Feature: Added more filtering options on the Members page
 * Feature: Bulk delete subscriptions from the Members page

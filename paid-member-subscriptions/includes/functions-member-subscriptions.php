@@ -383,8 +383,10 @@ function pms_member_delete_user_subscription_cancel( $user_id = 0 ) {
         if( $member_subscription->status == 'active' ) {
 
             $member_subscription->update( array( 'status' => 'canceled' ) );
+            do_action( 'pms_api_cancel_paypal_subscription', $member_subscription->payment_profile_id, $member_subscription->subscription_plan_id );
+            apply_filters( 'pms_confirm_cancel_subscription', true, $user_id, $member_subscription->subscription_plan_id );
 
-			pms_add_member_subscription_log( $member_subscription->id, 'subscription_canceled_user_deletion', array( 'who' => get_current_user_id() ) );
+            pms_add_member_subscription_log( $member_subscription->id, 'subscription_canceled_user_deletion', array( 'who' => get_current_user_id() ) );
 
         }
 

@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 function pms_get_member( $user_id ) {
 
     return new PMS_Member( $user_id );
-// just testing
+
 }
 
 /**

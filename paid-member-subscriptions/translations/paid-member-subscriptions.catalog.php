@@ -1257,7 +1257,7 @@
 <?php __("Subscription Type", "paid-member-subscriptions"); ?>
 <?php __("Please select the duration type for this subscription plan.", "paid-member-subscriptions"); ?>
 <?php __("The number of additional members, including the owner, that can be added to the subscription.", "paid-member-subscriptions"); ?>
-<?php __("Filter by Group...", "paid-member-subscriptions"); ?>
+<?php __("Group...", "paid-member-subscriptions"); ?>
 <?php __("Edit Owner", "paid-member-subscriptions"); ?>
 <?php __("Invalid subscriptions.", "paid-member-subscriptions"); ?>
 <?php __("Group seats cannot be empty.", "paid-member-subscriptions"); ?>
