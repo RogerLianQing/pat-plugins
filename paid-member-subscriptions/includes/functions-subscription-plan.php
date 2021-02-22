@@ -181,6 +181,9 @@ function pms_get_subscription_plan_upgrades( $subscription_plan_id, $only_active
 		unset($include[$key]);
 		}
 	}
+	else{
+		$include = array();
+	}
 	$subscription_plans = pms_get_subscription_plans( true, $include );
     /**
      * Filter the subscription plans available for upgrade just before returning them
