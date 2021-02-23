@@ -168,6 +168,9 @@ jQuery(document).ready(function($) {
 					if( first_char.includes(data['code'].charAt(0)) ){
 						response.error.message =  "Oops, you might have used a promotional code from another website. Try to use it on https://canadianinventorsassociation.com/";
 					}
+					if( data['code'] == 'ShowtheReceipt'){
+						response.error.message =  "This subscription is free!";
+					}
 					
                     $('#pms-subscription-plans-discount-messages-loading').fadeOut(350, function () {
                         $('#pms-subscription-plans-discount-messages').html(response.error.message).fadeIn(350);
