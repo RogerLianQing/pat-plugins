@@ -28,7 +28,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 // Roger Custom
 			$include = array(0=>616, 1=> 615, 2=> 617, 3=> 682, 4=> 713	);
 			$exclude = array();
-
+			//$_POST['code'] = '1234';
 			$plans =  pms_output_subscription_plans($include, $exclude, false, (isset($atts['selected']) ? trim($atts['selected']) : '' ), 'new_subscription' );
 
             $field_errors = pms_errors()->get_error_messages( 'subscription_plans' );

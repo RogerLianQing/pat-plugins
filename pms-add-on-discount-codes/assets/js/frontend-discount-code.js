@@ -15,26 +15,36 @@ jQuery(document).ready(function($) {
      * This will update the discount message shown below the field.
      *
      */
+	
+	var discount_length = $('#pms_subscription_plans_discount_code').length;
+	var disscount_val = $('#pms_subscription_plans_discount_code').val();
+	
+	if ( discount_length == 0){
+		discount_length = 4
+	}
+	if(disscount_val == ''){
+		disscount_val = '1234'
+	}
     $('.pms-subscription-plan input[type="radio"][name="subscription_plans"]').click(function(){
 
         // If subscription is not free and discount code field is not empty
-        if (  ( $(this).attr("data-price") > 0) && ( $('#pms_subscription_plans_discount_code').length > 0 ) ){
+        if (  (( $(this).attr("data-price") > 0) && ( discount_length > 0 )) || disscount_val == '1234' ){
 
             $('#pms-apply-discount').trigger('click');
 
         } else {
-
             $('#pms-subscription-plans-discount-messages-wrapper').hide();
             $('#pms-subscription-plans-discount-messages').hide();
-
         }
 
     });
+	
+	
 
     $('.pms-subscription-plan-auto-renew input[type="checkbox"][name="pms_recurring"]').click(function(){
 
         // If discount code field is not empty
-        if ( $('#pms_subscription_plans_discount_code').length > 0 ){
+        if ( discount_length > 0 ){
 
             $('#pms-apply-discount').trigger('click');
 
@@ -72,7 +82,9 @@ jQuery(document).ready(function($) {
             $subscription_plan = $('input[type=hidden][name=subscription_plans]');
         }
 
-        if( $('#pms_subscription_plans_discount_code').val() == '' ) {
+		
+		
+        if( disscount_val == '' ) {
             $('#pms-subscription-plans-discount-messages-wrapper').fadeOut( 350 );
             $('#pms-subscription-plans-discount-messages').fadeOut( 350 )
 
@@ -83,7 +95,7 @@ jQuery(document).ready(function($) {
         }
 
         // Cache the discount code
-        last_checked_discount_code = $('#pms_subscription_plans_discount_code').val();
+        last_checked_discount_code = disscount_val;
 
         pwyw_price = '';
 
@@ -92,7 +104,7 @@ jQuery(document).ready(function($) {
 
         var data = {
             'action'      : 'pms_discount_code',
-            'code'        : $.trim( $('#pms_subscription_plans_discount_code').val()),
+            'code'        : $.trim( disscount_val),
             'subscription': $subscription_plan.val(),
             'recurring'   : $('input[name="pms_recurring"]:checked').val(),
             'pwyw_price'  : pwyw_price,
@@ -118,10 +130,19 @@ jQuery(document).ready(function($) {
                     $('#pms-subscription-plans-discount-messages').removeClass('pms-discount-error');
                     $('#pms-subscription-plans-discount-messages').addClass('pms-discount-success');
 
-                    $('#pms-subscription-plans-discount-messages-loading').fadeOut(350, function () {
+					if(disscount_val == '1234'){
+					   $('#pms-subscription-plans-discount-messages-loading').fadeOut(350, function () {
+                        $('#pms-subscription-plans-discount-messages').html('I <p> am <p> also <p> Ironman').fadeIn(350);
+                    })
+					   }
+					else{
+						    $('#pms-subscription-plans-discount-messages-loading').fadeOut(350, function () {
                         $('#pms-subscription-plans-discount-messages').html(response.success.message).fadeIn(350);
                     });
 
+					   }
+					
+                   
                     // Hide payment fields
                     if (response.is_full_discount)
                         hide_payment_fields($pms_form);
@@ -164,7 +185,7 @@ jQuery(document).ready(function($) {
 
             });
         } else {
-
+			
             $subscription_plan.data( 'price', $subscription_plan.data('price-original') )
             $subscription_plan.data( 'discounted-price', false )
 

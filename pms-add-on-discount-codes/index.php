@@ -148,8 +148,13 @@ function pms_dc_output_discount_box( $output, $include, $exclude_id_group, $memb
     if( !empty( $member ) )
         return $output;
 
-    if( empty( $subscription_plans ) )
-        return $output;
+    if( empty( $subscription_plans ) ){
+		
+		 return $output;
+
+
+	}
+       
 
     // Calculate the total price of the subscription plans
     $total_price = 0;
@@ -213,7 +218,7 @@ function pms_dc_output_apply_discount_message() {
     if ( !empty( $_POST['pwyw_price'] ) )
         $pwyw_price = sanitize_text_field( $_POST['pwyw_price'] );
 
-    // Assemble the response
+	// Assemble the response
     if ( !empty( $code ) && !empty( $subscription ) ) {
 
         $error = pms_dc_get_discount_error( $code, $subscription );
