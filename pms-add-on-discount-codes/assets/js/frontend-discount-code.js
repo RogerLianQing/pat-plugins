@@ -175,10 +175,12 @@ jQuery(document).ready(function($) {
 						
 						var tax = (aftertax - closest).toFixed(2);
 						var text ='<p> Summary' + 
-							'<p style="text-align:right"> <span style="float:left">'+ 'You have Chosen' +  ' </span>' +  plan + ' </p> ' + 
+							'<p style="text-align:right"> <span style="float:left">'+ 'You have Chosen: ' +  ' </span>' +  plan + ' </p> ' + 
 							'<p style="text-align:right"> <span style="float:left">'+ 'Price: ' +  ' </span>'+ ' &#36; ' +  closest.toString() + ' </p> ' + 
 							'<p style="text-align:right"> <span style="float:left">'+ 'Tax (HST): ' +  ' </span>'+ ' &#36; ' +  tax.toString() + ' </p> ' + 
 							'<p style="text-align:right"> <span style="float:left">'+ 'Subtotal: ' +  ' </span>'+ ' &#36; ' +  aftertax.toString() + ' </p> ' + 
+							'<p style="text-align:right"> <span style="float:left">'+ 'Discount: ' +  ' </span>'+ ' &#36; ' +  '0.00' + ' </p> ' + 
+							'<p style="text-align:right"> <span style="float:left">'+ 'Total: ' +  ' </span>'+ ' &#36; ' +  aftertax.toString() + ' </p> ' + 
 							'<p> Please proceed to payment at the bottom. '
 					   $('#pms-subscription-plans-discount-messages-loading').fadeOut(350, function () {
                         $('#pms-subscription-plans-discount-messages').html(text).fadeIn(350);
