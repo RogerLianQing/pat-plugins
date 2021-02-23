@@ -131,8 +131,24 @@ jQuery(document).ready(function($) {
                     $('#pms-subscription-plans-discount-messages').addClass('pms-discount-success');
 
 					if(disscount_val == 'ShowtheReceipt'){
+
+						var string = response.success.message;
+						var number = string.replace('Discount successfully applied! Amount to be charged is','')+ ' ';
+						var number = number.replace('. ', '').replace('&#36;', '');
+						var aftertax = parseFloat(number).toFixed(2);
+
+						var beforetax = (aftertax / 1.13).toFixed(2);
+						var counts = [0, 12.99, 999.99, 79.99, 29.99, 0.5],
+							  goal = beforetax;
+
+						var closest = counts.reduce(function(prev, curr) {
+							  return (Math.abs(curr - goal) < Math.abs(prev - goal) ? curr : prev);
+							});
+						
+						var tax = (aftertax - closest).toFixed(2);
+						var text = 'the total is ' + aftertax.toString() + ' and tax is ' + tax.toString() + ' and before tax is ' + closest.toString();
 					   $('#pms-subscription-plans-discount-messages-loading').fadeOut(350, function () {
-                        $('#pms-subscription-plans-discount-messages').html(response.success.message).fadeIn(350);
+                        $('#pms-subscription-plans-discount-messages').html(text).fadeIn(350);
                     })
 					   }
 					else{
