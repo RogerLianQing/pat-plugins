@@ -240,8 +240,8 @@ jQuery(document).ready(function($) {
 							'<p style="text-align:right"> <span style="float:left">'+ 'Tax (HST): ' +  ' </span>'+ ' &#36; ' +  tax.toString() + ' </p> ' + 
 							'<p style="text-align:right"> <span style="float:left">'+ 'Subtotal: ' +  ' </span>'+ ' &#36; ' +  aftertax.toString() + ' </p> ' + 
 							'<p style="text-align:right"> <span style="float:left">'+ 'Discount: ' +  ' </span>'+ ' &#36; ' +  discount.toString() + ' </p> ' + 
-							'<p style="text-align:right"> <span style="float:left">'+ 'Total Now: ' +  ' </span>'+ ' &#36; ' +  numbers[0].toString() + ' </p> ' + 
-							'<p style="text-align:right"> <span style="float:left">'+ 'Annual Charge next year: ' +  ' </span>'+ ' &#36; ' +  numbers[1].toString() + ' </p> ' + 
+							'<p style="text-align:right"> <span style="float:left">'+ 'Total: ' +  ' </span>'+ ' &#36; ' +  numbers[0].toString() + ' </p> ' + 
+							'<p style="text-align:right"> <span style="float:left">'+ 'Next Payment: ' +  ' </span>'+ ' &#36; ' +  numbers[1].toString() + ' </p> ' + 
 							'<p> Please proceed to payment at the bottom. '
 					   $('#pms-subscription-plans-discount-messages-loading').fadeOut(350, function () {
                         $('#pms-subscription-plans-discount-messages').html(text).fadeIn(350);
