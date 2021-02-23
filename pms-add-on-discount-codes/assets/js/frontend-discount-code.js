@@ -146,7 +146,7 @@ jQuery(document).ready(function($) {
 							});
 						
 						var tax = (aftertax - closest).toFixed(2);
-						var text = 'the total is ' + aftertax.toString() + ' and tax is ' + tax.toString() + ' and before tax is ' + closest.toString();
+						var text = '<P> Receipt <p> The price for you plan is: ' + closest.toString() + '<p> The Tax (HST) would be: ' + tax.toString() + ' <p> So your annual subtotal would be: ' + aftertax.toString();
 					   $('#pms-subscription-plans-discount-messages-loading').fadeOut(350, function () {
                         $('#pms-subscription-plans-discount-messages').html(text).fadeIn(350);
                     })
