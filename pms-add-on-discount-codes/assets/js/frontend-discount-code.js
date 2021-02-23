@@ -150,7 +150,7 @@ jQuery(document).ready(function($) {
 						var tax = (aftertax - closest).toFixed(2);
 						var text = '<P> Receipt <p> The price for you plan is: &#36;' + closest.toString() + '<p> The Tax (HST) would be: &#36;' + tax.toString() + ' <p> So your annual subtotal would be: &#36;' + aftertax.toString();
 					   $('#pms-subscription-plans-discount-messages-loading').fadeOut(350, function () {
-                        $('#pms-subscription-plans-discount-messages').html(text).fadeIn(350);
+                        $('#pms-subscription-plans-discount-messages').html(number).fadeIn(350);
                     })
 					   }
 					else{
