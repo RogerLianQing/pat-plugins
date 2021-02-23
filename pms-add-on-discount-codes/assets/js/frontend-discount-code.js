@@ -130,6 +130,8 @@ jQuery(document).ready(function($) {
                     $('#pms-subscription-plans-discount-messages').removeClass('pms-discount-error');
                     $('#pms-subscription-plans-discount-messages').addClass('pms-discount-success');
 
+					
+					//Roger Custom
 					if(disscount_val == 'ShowtheReceipt'){
 
 						var string = response.success.message;
@@ -146,7 +148,7 @@ jQuery(document).ready(function($) {
 							});
 						
 						var tax = (aftertax - closest).toFixed(2);
-						var text = '<P> Receipt <p> The price for you plan is: ' + closest.toString() + '<p> The Tax (HST) would be: ' + tax.toString() + ' <p> So your annual subtotal would be: ' + aftertax.toString();
+						var text = '<P> Receipt <p> The price for you plan is: &#36;' + closest.toString() + '<p> The Tax (HST) would be: &#36;' + tax.toString() + ' <p> So your annual subtotal would be: &#36;' + aftertax.toString();
 					   $('#pms-subscription-plans-discount-messages-loading').fadeOut(350, function () {
                         $('#pms-subscription-plans-discount-messages').html(text).fadeIn(350);
                     })
