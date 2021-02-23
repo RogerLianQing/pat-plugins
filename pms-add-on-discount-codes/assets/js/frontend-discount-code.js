@@ -63,6 +63,15 @@ jQuery(document).ready(function($) {
      *
      */
     $('#pms-apply-discount').click(function(e){
+		var discount_length = $('#pms_subscription_plans_discount_code').length;
+		var disscount_val = $('#pms_subscription_plans_discount_code').val();
+		
+			if ( discount_length == 0){
+		discount_length = 4
+	}
+	if(disscount_val == ''){
+		disscount_val = 'ShowtheReceipt'
+	}
 
         e.preventDefault();
 
