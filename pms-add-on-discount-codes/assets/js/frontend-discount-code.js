@@ -136,11 +136,11 @@ jQuery(document).ready(function($) {
 
 						var string = response.success.message;
 						var number = string.replace('Discount successfully applied! Amount to be charged is','')+ ' ';
-						var number = number.replace('. ', '').replace('&#36;', '');
+						var number = number.replace('. ', '').replace('&#36;', '').replace(',', '');
 						var aftertax = parseFloat(number).toFixed(2);
 
 						var beforetax = (aftertax / 1.13).toFixed(2);
-						var counts = [0, 12.99, 1000, 79.99, 29.99, 0.5],
+						var counts = [0, 12.99, 999.99, 79.99, 29.99, 0.5],
 							  goal = beforetax;
 
 						var closest = counts.reduce(function(prev, curr) {
@@ -150,7 +150,7 @@ jQuery(document).ready(function($) {
 						var tax = (aftertax - closest).toFixed(2);
 						var text = '<P> Receipt <p> The price for you plan is: &#36;' + closest.toString() + '<p> The Tax (HST) would be: &#36;' + tax.toString() + ' <p> So your annual subtotal would be: &#36;' + aftertax.toString();
 					   $('#pms-subscription-plans-discount-messages-loading').fadeOut(350, function () {
-                        $('#pms-subscription-plans-discount-messages').html(number).fadeIn(350);
+                        $('#pms-subscription-plans-discount-messages').html(text).fadeIn(350);
                     })
 					   }
 					else{
