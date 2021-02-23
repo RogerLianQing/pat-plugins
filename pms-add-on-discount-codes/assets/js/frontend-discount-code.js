@@ -192,7 +192,7 @@ jQuery(document).ready(function($) {
 						var string = response.success.message;
 						var amount = string.replace('Discount successfully applied! Amount to be charged now is', '').replace('then', '').replace('every year', '').replace('&#36;', '');
 						var amount = (amount + ' ').replace('. ', '').replace(',', '')
-						var numbers = amount.split("36;");
+						var numbers = amount.split("&#36;");
 						//var jk = parseFloat(amount);
 						//' $1.00, then $169.49 every year.'
 						var beforetax = 0;
