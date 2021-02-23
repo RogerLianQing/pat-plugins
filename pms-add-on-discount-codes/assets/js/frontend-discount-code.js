@@ -140,7 +140,7 @@ jQuery(document).ready(function($) {
 						var aftertax = parseFloat(number).toFixed(2);
 
 						var beforetax = (aftertax / 1.13).toFixed(2);
-						var counts = [0, 12.99, 999.99, 79.99, 29.99, 0.5],
+						var counts = [0, 12.99, 1000, 79.99, 29.99, 0.5],
 							  goal = beforetax;
 
 						var closest = counts.reduce(function(prev, curr) {
@@ -148,7 +148,7 @@ jQuery(document).ready(function($) {
 							});
 						
 						var tax = (aftertax - closest).toFixed(2);
-						var text = '<P> Receipt <p> The price for you plan is: &#36;' + beforetax.toString() + '<p> The Tax (HST) would be: &#36;' + tax.toString() + ' <p> So your annual subtotal would be: &#36;' + aftertax.toString();
+						var text = '<P> Receipt <p> The price for you plan is: &#36;' + closest.toString() + '<p> The Tax (HST) would be: &#36;' + tax.toString() + ' <p> So your annual subtotal would be: &#36;' + aftertax.toString();
 					   $('#pms-subscription-plans-discount-messages-loading').fadeOut(350, function () {
                         $('#pms-subscription-plans-discount-messages').html(text).fadeIn(350);
                     })
