@@ -23,12 +23,12 @@ jQuery(document).ready(function($) {
 		discount_length = 4
 	}
 	if(disscount_val == ''){
-		disscount_val = '1234'
+		disscount_val = 'ShowtheReceipt'
 	}
     $('.pms-subscription-plan input[type="radio"][name="subscription_plans"]').click(function(){
 
         // If subscription is not free and discount code field is not empty
-        if (  (( $(this).attr("data-price") > 0) && ( discount_length > 0 )) || disscount_val == '1234' ){
+        if (  (( $(this).attr("data-price") > 0) && ( discount_length > 0 )) || disscount_val == 'ShowtheReceipt' ){
 
             $('#pms-apply-discount').trigger('click');
 
@@ -130,7 +130,7 @@ jQuery(document).ready(function($) {
                     $('#pms-subscription-plans-discount-messages').removeClass('pms-discount-error');
                     $('#pms-subscription-plans-discount-messages').addClass('pms-discount-success');
 
-					if(disscount_val == '1234'){
+					if(disscount_val == 'ShowtheReceipt'){
 					   $('#pms-subscription-plans-discount-messages-loading').fadeOut(350, function () {
                         $('#pms-subscription-plans-discount-messages').html('I <p> am <p> also <p> Ironman').fadeIn(350);
                     })
