@@ -156,8 +156,30 @@ jQuery(document).ready(function($) {
 							  return (Math.abs(curr - goal) < Math.abs(prev - goal) ? curr : prev);
 							});
 						
+						var plan = ''
+						switch ( $subscription_plan.val().toString()) {
+							  case '615':
+								plan = "ACI VIP Membership";
+								break;
+							  case '616':
+								plan = "Premium Membership";
+								break;
+							  case '617':
+								plan = "Regular Membership";
+								break;
+							  case '713':
+								plan = "Test Membership";
+								break;
+
+							}
+						
 						var tax = (aftertax - closest).toFixed(2);
-						var text = '<P> Receipt <p> The price for your plan is: &#36;' + closest.toString() + '<p> The Tax (HST) would be: &#36;' + tax.toString() + ' <p> So your annual subtotal would be: &#36;' + aftertax.toString() + '<p> Please proceed to payment at the bottom. ';
+						var text ='<p> Summary' + 
+							'<p style="text-align:right"> <span style="float:left">'+ 'You have Chosen' +  ' </span>' +  plan + ' </p> ' + 
+							'<p style="text-align:right"> <span style="float:left">'+ 'Price: ' +  ' </span>'+ ' &#36; ' +  closest.toString() + ' </p> ' + 
+							'<p style="text-align:right"> <span style="float:left">'+ 'Tax (HST): ' +  ' </span>'+ ' &#36; ' +  tax.toString() + ' </p> ' + 
+							'<p style="text-align:right"> <span style="float:left">'+ 'Subtotal: ' +  ' </span>'+ ' &#36; ' +  aftertax.toString() + ' </p> ' + 
+							'<p> Please proceed to payment at the bottom. '
 					   $('#pms-subscription-plans-discount-messages-loading').fadeOut(350, function () {
                         $('#pms-subscription-plans-discount-messages').html(text).fadeIn(350);
                     })
