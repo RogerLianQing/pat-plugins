@@ -194,7 +194,7 @@ jQuery(document).ready(function($) {
 						var amount = (amount + ' ').replace('. ', '').replace(',', '')
 						var numbers = amount.split("&#36;");
 						//var jk = parseFloat(amount);
-						//' $1.00, then $169.49 every year.'
+
 						var beforetax = 0;
 						var plan = '';
 						var tax = 0;
@@ -232,16 +232,18 @@ jQuery(document).ready(function($) {
 
 							}
 
+						var discount = (aftertax - numbers[0]).toFixed(2);
+						
 						var text ='<p> Summary' + 
 							'<p style="text-align:right"> <span style="float:left">'+ 'You have Chosen: ' +  ' </span>' +  plan + ' </p> ' + 
 							'<p style="text-align:right"> <span style="float:left">'+ 'Price: ' +  ' </span>'+ ' &#36; ' +  beforetax.toString() + ' </p> ' + 
 							'<p style="text-align:right"> <span style="float:left">'+ 'Tax (HST): ' +  ' </span>'+ ' &#36; ' +  tax.toString() + ' </p> ' + 
 							'<p style="text-align:right"> <span style="float:left">'+ 'Subtotal: ' +  ' </span>'+ ' &#36; ' +  aftertax.toString() + ' </p> ' + 
-							'<p style="text-align:right"> <span style="float:left">'+ 'Discount: ' +  ' </span>'+ ' &#36; ' +  '0.00' + ' </p> ' + 
+							'<p style="text-align:right"> <span style="float:left">'+ 'Discount: ' +  ' </span>'+ ' &#36; ' +  discount.toString() + ' </p> ' + 
 							'<p style="text-align:right"> <span style="float:left">'+ 'Total: ' +  ' </span>'+ ' &#36; ' +  aftertax.toString() + ' </p> ' + 
 							'<p> Please proceed to payment at the bottom. '
 					   $('#pms-subscription-plans-discount-messages-loading').fadeOut(350, function () {
-                        $('#pms-subscription-plans-discount-messages').html(numbers).fadeIn(350);
+                        $('#pms-subscription-plans-discount-messages').html(text).fadeIn(350);
                     });
 
 					   }
