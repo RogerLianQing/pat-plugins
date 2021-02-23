@@ -132,7 +132,7 @@ jQuery(document).ready(function($) {
 
 					if(disscount_val == 'ShowtheReceipt'){
 					   $('#pms-subscription-plans-discount-messages-loading').fadeOut(350, function () {
-                        $('#pms-subscription-plans-discount-messages').html('I <p> am <p> also <p> Ironman').fadeIn(350);
+                        $('#pms-subscription-plans-discount-messages').html(response.success.message).fadeIn(350);
                     })
 					   }
 					else{
