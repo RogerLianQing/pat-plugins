@@ -180,7 +180,7 @@ jQuery(document).ready(function($) {
 							'<p style="text-align:right"> <span style="float:left">'+ 'Tax (HST): ' +  ' </span>'+ ' &#36; ' +  tax.toString() + ' </p> ' + 
 							'<p style="text-align:right"> <span style="float:left">'+ 'Subtotal: ' +  ' </span>'+ ' &#36; ' +  aftertax.toString() + ' </p> ' + 
 							'<p style="text-align:right"> <span style="float:left">'+ 'Discount: ' +  ' </span>'+ ' &#36; ' +  '0.00' + ' </p> ' + 
-							'<p style="text-align:right"> <span style="float:left">'+ 'Total To Pay: ' +  ' </span>'+ ' &#36; ' +  aftertax.toString() + ' </p> ' + 
+							'<p style="text-align:right"> <span style="float:left">'+ 'Total To Pay: ' +  ' </span>'+ ' &#36; ' +  aftertax.toString() + ' </p> '
 
 					   $('#pms-subscription-plans-discount-messages-loading').fadeOut(350, function () {
                         $('#pms-subscription-plans-discount-messages').html(text).fadeIn(350);
