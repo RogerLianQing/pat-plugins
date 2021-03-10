@@ -152,7 +152,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
     <?php do_action( 'pms_' . $form_name . '_form_bottom', $atts ); ?>
 
-    <input name="pms_<?php echo $form_name; ?>" type="submit" value="<?php echo apply_filters( 'pms_' . $form_name . '_form_submit_text', __( 'Register', 'paid-member-subscriptions' ) ); ?>" />
+    <input name="pms_<?php echo $form_name; ?>" type="submit" value="<?php echo apply_filters( 'pms_' . $form_name . '_form_submit_text', __( 'Pay', 'paid-member-subscriptions' ) ); ?>" />
 	
 	
 
